@@ -1,7 +1,7 @@
 CFLAGS=-Wall -g
 
-#%.o: %.c
-#	$(CC) $(CFLAGS) $< -o bin/$@
+%: %.c
+	$(CC) $(CFLAGS) $< -o bin/$@
 
 clean:
-	rm -f bin/*
+	rm -rf bin/**
